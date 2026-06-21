@@ -958,6 +958,10 @@ dd {
     cursor: auto;
   }
 
+  .hero-copy {
+    width: 100%;
+  }
+
   a,
   button {
     cursor: pointer;
@@ -1027,10 +1031,20 @@ dd {
   }
 
   .hero-title {
-    max-width: 8.6ch;
-    margin-bottom: 20px;
-    font-size: clamp(2.35rem, 12.4vw, 3.55rem);
-    line-height: 0.95;
+    max-width: 9.4ch;
+    margin-bottom: 18px;
+    font-size: clamp(2.65rem, 12.8vw, 3.8rem);
+    line-height: 0.88;
+    letter-spacing: 0.01em;
+  }
+
+  .split-text {
+    align-items: baseline;
+  }
+
+  .word-mask {
+    overflow: visible;
+    padding-bottom: 0;
   }
 
   h2 {
@@ -1219,7 +1233,9 @@ dd {
 
 @media (max-width: 390px) {
   .hero-title {
-    font-size: clamp(2.1rem, 11.5vw, 3rem);
+    max-width: 9.2ch;
+    font-size: clamp(2.25rem, 11.5vw, 3rem);
+    line-height: 0.9;
   }
 
   h2 {
